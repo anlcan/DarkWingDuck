@@ -11,6 +11,7 @@
 #import "AppController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "Coolblue.h"
+#import "CBProductDetail.h"
 
 @interface CBBAseViewController : UIViewController
 
@@ -47,6 +48,13 @@
  *
  */
 -(void)presentOrderViewController;
+
+
+/**
+ *
+ */
+-(void)pushProductDetail:(CBProductDetail*)productDetai;
+
 
 /**
  *

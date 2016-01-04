@@ -151,6 +151,18 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ( indexPath.section == BUNDLE_SECTION){
+        CBBundle * bundle =[self.productDetail.bundles objectAtIndex:indexPath.row];
+        CBProductDetail * detail = [CBProductDetail new];
+        detail.name = bundle.name;
+        detail.price = bundle.price;
+        detail.image = @"https://unsplash.it/200/300/?random";
+        detail.inStock = YES;
+        detail.reviews = 133;
+        detail.star = 1.5;
+        
+        [self pushProductDetail:detail];
+    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     

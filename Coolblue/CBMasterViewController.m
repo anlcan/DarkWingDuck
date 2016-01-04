@@ -9,7 +9,7 @@
 #import "CBMasterViewController.h"
 #import "CBProduct.h"
 #import "CBProductDetail.h"
-#import "CBProductDetailViewController.h"
+
 
 @interface CBMasterViewController ()<UISearchBarDelegate>
 @property (nonatomic, strong) UISearchBar * searchBar;
@@ -110,12 +110,8 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CBProduct * product = [self.array objectAtIndex:indexPath.row];
-    
-    
-    // the correct way to do this is ..
-    //NSString * path = [NSString stringWithFormat:@"/products/%d", product.id];
-    // .....but since we are mocking.
-    NSString * path = [NSString stringWithFormat:@"/products/%d", 1];
+    NSString * path = [NSString stringWithFormat:@"/products/%d", product.id];
+
     NSURLRequest * request = [self requestForPath:path];
     
     CBMasterViewController *__weak weakSelf = self;
@@ -133,11 +129,7 @@
     
 }
 
--(void)pushProductDetail:(CBProductDetail*)detail{
-    CBProductDetailViewController * detailVC = _create(CBProductDetailViewController);
-    detailVC.productDetail = detail;
-    [self.navigationController pushViewController:detailVC animated:YES];
-}
+
 
 #pragma mark - UISearchBar Delegate
 -(void)resetSearch{

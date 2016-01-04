@@ -10,7 +10,7 @@
 #import "CBModel.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "CBOrderDetailViewController.h"
-
+#import "CBProductDetailViewController.h"
 /**
  * we will use onlyu one sessionManager, will be very usefull to track all requests
  *
@@ -71,6 +71,12 @@ static NSString * host = @"http://demo3033169.mockable.io";
     }];
 }
 
+-(void)pushProductDetail:(CBProductDetail*)detail{
+    CBProductDetailViewController * detailVC = _create(CBProductDetailViewController);
+    detailVC.productDetail = detail;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
+
 #pragma accessory
 
 - (BOOL)canBecomeFirstResponder{
@@ -96,6 +102,8 @@ static NSString * host = @"http://demo3033169.mockable.io";
 -(void)dismissProgress{
     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
+
+
 
 
 -(NSURLRequest*)requestForPath:(NSString *)path{
