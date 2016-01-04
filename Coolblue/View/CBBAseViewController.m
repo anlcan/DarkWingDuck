@@ -105,13 +105,29 @@ static NSString * host = @"http://demo3033169.mockable.io";
 
 
 
-
+#pragma mark networking
 -(NSURLRequest*)requestForPath:(NSString *)path{
     NSString * fullPath = [NSString stringWithFormat:@"%@%@", host, path];
     NSURL *URL = [NSURL URLWithString:fullPath];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
 
     return request;
+}
+
+-(void)send:(NSURLRequest*)request withCompletion:(nullable void (^)(id responseObject)) completion{
+   
+    CBBAseViewController *__weak weakSelf = self;
+    NSURLSessionDataTask * task = [self.manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        [weakSelf dismissProgress];
+        if (error ==nil){
+            completion(responseObject);
+        }
+        
+    }];
+    
+    [task resume];
+    [self showProgress];
+    
 }
 
 - (void)shakeAnimation:(UIView*)view

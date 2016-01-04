@@ -45,6 +45,11 @@
 -(NSURLRequest*)requestForPath:(NSString *)relativePath;
 
 /**
+ * sends an nsurlrequest to server with success completion
+ */
+-(void)send:(NSURLRequest*)request withCompletion:(nullable void (^)(id responseObject)) completion;
+
+/**
  *
  */
 -(void)presentOrderViewController;

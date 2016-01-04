@@ -31,11 +31,7 @@
     button.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:18]];
-    
-    
-    
-    
-    [button setBackgroundColor:[UIColor redColor]];
+    [button setBackgroundColor:[UIColor darkGrayColor]];
     
     self.accesoryView = button;
 }
@@ -82,7 +78,6 @@
     CBProduct * product = [[AppController shared].getCurrentOrder.products objectAtIndex:indexPath.row];
     cell.textLabel.text = product.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f", product.price]; // this should be on product...
-    
     
     return cell;
 }

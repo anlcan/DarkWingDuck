@@ -214,11 +214,11 @@
 		967755481C3A6E02002E279C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9677554D1C3A6F31002E279C /* CBBAseViewController.h */,
+				9677554E1C3A6F31002E279C /* CBBAseViewController.m */,
 				967755391C3A642B002E279C /* CBMasterViewController.h */,
 				9677553A1C3A642B002E279C /* CBMasterViewController.m */,
 				9677553B1C3A642B002E279C /* CBMasterViewController.xib */,
-				9677554D1C3A6F31002E279C /* CBBAseViewController.h */,
-				9677554E1C3A6F31002E279C /* CBBAseViewController.m */,
 				967755501C3A8093002E279C /* CBProductDetailViewController.h */,
 				967755511C3A8093002E279C /* CBProductDetailViewController.m */,
 				967755521C3A8093002E279C /* CBProductDetailViewController.xib */,

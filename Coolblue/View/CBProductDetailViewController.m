@@ -35,9 +35,10 @@
     
     UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,HEADER_HEIGHT )];
     label.numberOfLines = 2;
-    label.text = [NSString stringWithFormat:@"%@ %@\n%.1f star %d reviews",
+    label.text = [NSString stringWithFormat:@"%@ %@ for %@\n%.1f star %d reviews",
                   self.productDetail.name,
                   self.productDetail.inStock?@"in stock" : @"out of stock",
+                  [NSString stringWithFormat:@"%.2f", self.productDetail.price],
                   self.productDetail.star,
                   self.productDetail.reviews];
     

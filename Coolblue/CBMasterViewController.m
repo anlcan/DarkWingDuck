@@ -60,26 +60,20 @@
 -(void)fetchProducts{
     
     NSURLRequest * request = [self requestForPath:@"/products"];
-    
     CBMasterViewController *__weak weakSelf = self;
-    NSURLSessionDataTask * task = [self.manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        [weakSelf dismissProgress];
-        if ( !nil){
-            NSMutableArray * array = [NSMutableArray arrayWithCapacity:0];
-            
-            for ( NSDictionary * dict in responseObject){
-                CBProduct * product = [self parse:dict forClass:[CBProduct class]];
-                [array addObject:product];
-            }
-            // update controller/manager products so others can access it...
-            [AppController shared].currentProducts = array;
-            [weakSelf resetSearch];
-        }
-        
-    }];
     
-    [task resume];
-    [self showProgress];
+    [self send:request withCompletion:^(id responseObject){
+        
+        NSMutableArray * array = [NSMutableArray arrayWithCapacity:0];
+        
+        for ( NSDictionary * dict in responseObject){
+            CBProduct * product = [self parse:dict forClass:[CBProduct class]];
+            [array addObject:product];
+        }
+    // update controller/manager products so others can access it...
+        [AppController shared].currentProducts = array;
+        [weakSelf resetSearch];
+    }];
 }
 
 
@@ -112,21 +106,12 @@
     CBProduct * product = [self.array objectAtIndex:indexPath.row];
     NSString * path = [NSString stringWithFormat:@"/products/%d", product.id];
 
-    NSURLRequest * request = [self requestForPath:path];
-    
     CBMasterViewController *__weak weakSelf = self;
-    NSURLSessionDataTask * task = [self.manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        [weakSelf dismissProgress];
-        if ( !nil){
-            CBProductDetail * productDetail = [self parse:responseObject forClass:[CBProductDetail class]];
-            [weakSelf pushProductDetail:productDetail];
-        }
-        
+    NSURLRequest * request = [self requestForPath:path];
+    [self send:request withCompletion:^(id responseObject) {
+        CBProductDetail * productDetail = [self parse:responseObject forClass:[CBProductDetail class]];
+        [weakSelf pushProductDetail:productDetail];
     }];
-    
-    [task resume];
-    [self showProgress];
-    
 }
 
 
