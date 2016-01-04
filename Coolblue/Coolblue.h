@@ -10,6 +10,9 @@
 #define Coolblue_h
 #import <objc/runtime.h>
 
+/*
+ Some usefull macros for dealing nib creation
+ */
 
 //==============================================================================
 #define _className(x)		        [NSString stringWithCString:class_getName([x class]) encoding:NSUTF8StringEncoding]

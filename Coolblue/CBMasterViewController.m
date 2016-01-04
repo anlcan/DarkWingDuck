@@ -8,7 +8,8 @@
 
 #import "CBMasterViewController.h"
 #import "CBProduct.h"
-
+#import "CBProductDetail.h"
+#import "CBProductDetailViewController.h"
 
 @interface CBMasterViewController ()<UISearchBarDelegate>
 @property (nonatomic, strong) UISearchBar * searchBar;
@@ -57,20 +58,20 @@
 
 
 -(void)fetchProducts{
+    
     NSURLRequest * request = [self requestForPath:@"/products"];
     
     CBMasterViewController *__weak weakSelf = self;
     NSURLSessionDataTask * task = [self.manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         [weakSelf dismissProgress];
         if ( !nil){
-            NSLog(@"%@",responseObject);
             NSMutableArray * array = [NSMutableArray arrayWithCapacity:0];
             
             for ( NSDictionary * dict in responseObject){
                 CBProduct * product = [self parse:dict forClass:[CBProduct class]];
-                NSLog(@"%@",product);
                 [array addObject:product];
             }
+            // update controller/manager products so others can access it...
             [AppController shared].currentProducts = array;
             [weakSelf resetSearch];
         }
@@ -108,7 +109,34 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    CBProduct * product = [self.array objectAtIndex:indexPath.row];
     
+    
+    // the correct way to do this is ..
+    //NSString * path = [NSString stringWithFormat:@"/products/%d", product.id];
+    // .....but since we are mocking.
+    NSString * path = [NSString stringWithFormat:@"/products/%d", 1];
+    NSURLRequest * request = [self requestForPath:path];
+    
+    CBMasterViewController *__weak weakSelf = self;
+    NSURLSessionDataTask * task = [self.manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        [weakSelf dismissProgress];
+        if ( !nil){
+            CBProductDetail * productDetail = [self parse:responseObject forClass:[CBProductDetail class]];
+            [weakSelf pushProductDetail:productDetail];
+        }
+        
+    }];
+    
+    [task resume];
+    [self showProgress];
+    
+}
+
+-(void)pushProductDetail:(CBProductDetail*)detail{
+    CBProductDetailViewController * detailVC = _create(CBProductDetailViewController);
+    detailVC.productDetail = detail;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark - UISearchBar Delegate

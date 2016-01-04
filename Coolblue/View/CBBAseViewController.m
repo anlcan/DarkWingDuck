@@ -9,6 +9,8 @@
 #import "CBBAseViewController.h"
 #import "CBModel.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "CBOrderDetailViewController.h"
+
 /**
  * we will use onlyu one sessionManager, will be very usefull to track all requests
  *
@@ -52,9 +54,22 @@ static NSString * host = @"http://demo3033169.mockable.io";
 
 
 -(id)parse:(NSDictionary*)dict forClass:(Class)c{
-    
-    return [[c alloc]initWithDictionary:dict error:nil];
+    NSError * error = nil;
+    id result =  [[c alloc]initWithDictionary:dict error:&error];
+    if ( error!= nil){
+        NSLog(@"%@", error);
+    }
+    return result;
 }
+
+-(void)presentOrderViewController{
+    CBOrderDetailViewController * orderVC = _create(CBOrderDetailViewController);
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:orderVC];
+    [self.navigationController presentViewController:nav animated:YES completion:^{
+        
+    }];
+}
+
 
 
 /*
@@ -79,6 +94,43 @@ static NSString * host = @"http://demo3033169.mockable.io";
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
 
     return request;
+}
+
+- (void)shakeAnimation:(UIView*)view
+{
+    const int reset = 5;
+    const int maxShakes = 6;
+    
+    // pass these as variables instead of statics or class variables if shaking
+    // two controls simultaneously
+    static int shakes = 0;
+    static int translate = reset;
+    
+    [UIView animateWithDuration:0.09 - (shakes * .01) // reduce duration every
+     // shake from .09 to .04
+                          delay:0.01f // edge wait delay
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         view.transform = CGAffineTransformMakeTranslation(translate, 0);
+                     }
+                     completion:^(BOOL finished) {
+                         if (shakes < maxShakes) {
+                             shakes++;
+                             
+                             // throttle down movement
+                             if (translate > 0)
+                                 translate--;
+                             
+                             // change direction
+                             translate *= -1;
+                             [self shakeAnimation:view];
+                         } else {
+                             view.transform = CGAffineTransformIdentity;
+                             shakes = 0; // ready for next time
+                             translate = reset; // ready for next time
+                             return;
+                         }
+                     }];
 }
 
 @end

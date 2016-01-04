@@ -10,6 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import "AppController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "Coolblue.h"
 
 @interface CBBAseViewController : UIViewController
 
@@ -38,5 +39,9 @@
  *
  */
 -(NSURLRequest*)requestForPath:(NSString *)relativePath;
+
+-(void)presentOrderViewController;
+
+- (void)shakeAnimation:(UIView*)view;
 
 @end

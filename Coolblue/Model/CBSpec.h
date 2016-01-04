@@ -1,5 +1,5 @@
 //
-//  CBProduct.h
+//  CBSpec.h
 //  Coolblue
 //
 //  Created by Anil Can Baykal on 1/4/16.
@@ -7,22 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CBModel.h"
+#import <JSONModel/JSONModel.h>
+@protocol CBSpec
+@end
 
-@interface CBProduct : CBModel
+@interface CBSpec : JSONModel
 
-/*
- *
- */
 @property (nonatomic, strong) NSString * name;
-
-
-/*
- *
- */
-@property (nonatomic) double price;
-
-
-
+@property (nonatomic, strong) NSString * value;
 
 @end

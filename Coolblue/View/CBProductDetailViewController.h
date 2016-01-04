@@ -6,8 +6,13 @@
 //  Copyright © 2016 HappyBlueDuck. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CBBAseViewController.h"
+#import "CBProductDetail.h"
 
-@interface CBProductDetailViewController : UIViewController
+@interface CBProductDetailViewController : CBBAseViewController<UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) CBProductDetail* productDetail;
+@property (weak, nonatomic) IBOutlet UIImageView *imgProductDetail;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableDetails;
 
 @end

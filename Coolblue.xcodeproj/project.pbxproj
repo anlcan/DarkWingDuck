@@ -22,6 +22,17 @@
 		9677554F1C3A6F31002E279C /* CBBAseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677554E1C3A6F31002E279C /* CBBAseViewController.m */; };
 		967755531C3A8093002E279C /* CBProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755511C3A8093002E279C /* CBProductDetailViewController.m */; };
 		967755541C3A8093002E279C /* CBProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967755521C3A8093002E279C /* CBProductDetailViewController.xib */; };
+		9677555A1C3A8939002E279C /* CBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755591C3A8939002E279C /* CBSpec.m */; };
+		9677555D1C3A8981002E279C /* CBBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677555C1C3A8981002E279C /* CBBundle.m */; };
+		967755601C3A8A93002E279C /* CBProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677555F1C3A8A93002E279C /* CBProductDetail.m */; };
+		967755651C3A9D0F002E279C /* ic_shopping_basket_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755621C3A9D0F002E279C /* ic_shopping_basket_2x.png */; };
+		967755661C3A9D0F002E279C /* ic_shopping_basket_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755631C3A9D0F002E279C /* ic_shopping_basket_3x.png */; };
+		967755691C3A9D31002E279C /* ic_shopping_basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755681C3A9D31002E279C /* ic_shopping_basket.png */; };
+		9677556D1C3A9EAA002E279C /* CBOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677556B1C3A9EAA002E279C /* CBOrderDetailViewController.m */; };
+		9677556E1C3A9EAA002E279C /* CBOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9677556C1C3A9EAA002E279C /* CBOrderDetailViewController.xib */; };
+		967755721C3A9F0C002E279C /* ic_clear_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9677556F1C3A9F0C002E279C /* ic_clear_2x.png */; };
+		967755731C3A9F0C002E279C /* ic_clear_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755701C3A9F0C002E279C /* ic_clear_3x.png */; };
+		967755741C3A9F0C002E279C /* ic_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755711C3A9F0C002E279C /* ic_clear.png */; };
 		EB69DF8FE11D27B15FEE9646 /* Pods_Coolblue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A73DBF903AA5F7F814CF471 /* Pods_Coolblue.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +85,21 @@
 		967755501C3A8093002E279C /* CBProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBProductDetailViewController.h; path = View/CBProductDetailViewController.h; sourceTree = "<group>"; };
 		967755511C3A8093002E279C /* CBProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBProductDetailViewController.m; path = View/CBProductDetailViewController.m; sourceTree = "<group>"; };
 		967755521C3A8093002E279C /* CBProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBProductDetailViewController.xib; path = View/CBProductDetailViewController.xib; sourceTree = "<group>"; };
+		967755581C3A8939002E279C /* CBSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBSpec.h; path = "\U0010Model/CBSpec.h"; sourceTree = "<group>"; };
+		967755591C3A8939002E279C /* CBSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBSpec.m; path = "\U0010Model/CBSpec.m"; sourceTree = "<group>"; };
+		9677555B1C3A8981002E279C /* CBBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBBundle.h; path = "\U0010Model/CBBundle.h"; sourceTree = "<group>"; };
+		9677555C1C3A8981002E279C /* CBBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBBundle.m; path = "\U0010Model/CBBundle.m"; sourceTree = "<group>"; };
+		9677555E1C3A8A93002E279C /* CBProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBProductDetail.h; path = "\U0010Model/CBProductDetail.h"; sourceTree = "<group>"; };
+		9677555F1C3A8A93002E279C /* CBProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBProductDetail.m; path = "\U0010Model/CBProductDetail.m"; sourceTree = "<group>"; };
+		967755621C3A9D0F002E279C /* ic_shopping_basket_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_basket_2x.png; sourceTree = "<group>"; };
+		967755631C3A9D0F002E279C /* ic_shopping_basket_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_basket_3x.png; sourceTree = "<group>"; };
+		967755681C3A9D31002E279C /* ic_shopping_basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_basket.png; sourceTree = "<group>"; };
+		9677556A1C3A9EAA002E279C /* CBOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBOrderDetailViewController.h; path = View/CBOrderDetailViewController.h; sourceTree = "<group>"; };
+		9677556B1C3A9EAA002E279C /* CBOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBOrderDetailViewController.m; path = View/CBOrderDetailViewController.m; sourceTree = "<group>"; };
+		9677556C1C3A9EAA002E279C /* CBOrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBOrderDetailViewController.xib; path = View/CBOrderDetailViewController.xib; sourceTree = "<group>"; };
+		9677556F1C3A9F0C002E279C /* ic_clear_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_2x.png; sourceTree = "<group>"; };
+		967755701C3A9F0C002E279C /* ic_clear_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_3x.png; sourceTree = "<group>"; };
+		967755711C3A9F0C002E279C /* ic_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear.png; sourceTree = "<group>"; };
 		E3EB63D708C5F120379286BC /* Pods-Coolblue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coolblue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coolblue/Pods-Coolblue.release.xcconfig"; sourceTree = "<group>"; };
 		F38CA0D6065679CFE6BBB04B /* Pods-Coolblue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coolblue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coolblue/Pods-Coolblue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +181,7 @@
 		967755021C3A625A002E279C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				967755611C3A9D0F002E279C /* icons */,
 				967755031C3A625A002E279C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -181,12 +208,18 @@
 		9677553E1C3A65B7002E279C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9677555E1C3A8A93002E279C /* CBProductDetail.h */,
+				9677555F1C3A8A93002E279C /* CBProductDetail.m */,
 				9677553F1C3A65E9002E279C /* CBModel.h */,
 				967755401C3A65E9002E279C /* CBModel.m */,
 				967755421C3A65FB002E279C /* CBProduct.h */,
 				967755431C3A65FB002E279C /* CBProduct.m */,
 				967755451C3A660E002E279C /* CBCustomer.h */,
 				967755461C3A660E002E279C /* CBCustomer.m */,
+				967755581C3A8939002E279C /* CBSpec.h */,
+				967755591C3A8939002E279C /* CBSpec.m */,
+				9677555B1C3A8981002E279C /* CBBundle.h */,
+				9677555C1C3A8981002E279C /* CBBundle.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -202,6 +235,9 @@
 				967755501C3A8093002E279C /* CBProductDetailViewController.h */,
 				967755511C3A8093002E279C /* CBProductDetailViewController.m */,
 				967755521C3A8093002E279C /* CBProductDetailViewController.xib */,
+				9677556A1C3A9EAA002E279C /* CBOrderDetailViewController.h */,
+				9677556B1C3A9EAA002E279C /* CBOrderDetailViewController.m */,
+				9677556C1C3A9EAA002E279C /* CBOrderDetailViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -213,6 +249,19 @@
 				9677554B1C3A6E37002E279C /* AppController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		967755611C3A9D0F002E279C /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				9677556F1C3A9F0C002E279C /* ic_clear_2x.png */,
+				967755701C3A9F0C002E279C /* ic_clear_3x.png */,
+				967755711C3A9F0C002E279C /* ic_clear.png */,
+				967755681C3A9D31002E279C /* ic_shopping_basket.png */,
+				967755621C3A9D0F002E279C /* ic_shopping_basket_2x.png */,
+				967755631C3A9D0F002E279C /* ic_shopping_basket_3x.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 		ED01042961013C59FD75DCF9 /* Frameworks */ = {
@@ -329,7 +378,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967755691C3A9D31002E279C /* ic_shopping_basket.png in Resources */,
+				967755661C3A9D0F002E279C /* ic_shopping_basket_3x.png in Resources */,
 				967755151C3A625A002E279C /* LaunchScreen.storyboard in Resources */,
+				9677556E1C3A9EAA002E279C /* CBOrderDetailViewController.xib in Resources */,
+				967755651C3A9D0F002E279C /* ic_shopping_basket_2x.png in Resources */,
+				967755721C3A9F0C002E279C /* ic_clear_2x.png in Resources */,
+				967755731C3A9F0C002E279C /* ic_clear_3x.png in Resources */,
+				967755741C3A9F0C002E279C /* ic_clear.png in Resources */,
 				967755121C3A625A002E279C /* Assets.xcassets in Resources */,
 				967755541C3A8093002E279C /* CBProductDetailViewController.xib in Resources */,
 				9677553D1C3A642B002E279C /* CBMasterViewController.xib in Resources */,
@@ -405,14 +461,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9677555D1C3A8981002E279C /* CBBundle.m in Sources */,
 				9677554F1C3A6F31002E279C /* CBBAseViewController.m in Sources */,
 				967755441C3A65FB002E279C /* CBProduct.m in Sources */,
 				967755071C3A625A002E279C /* AppDelegate.m in Sources */,
 				967755531C3A8093002E279C /* CBProductDetailViewController.m in Sources */,
 				967755471C3A660E002E279C /* CBCustomer.m in Sources */,
+				967755601C3A8A93002E279C /* CBProductDetail.m in Sources */,
 				9677553C1C3A642B002E279C /* CBMasterViewController.m in Sources */,
 				9677554C1C3A6E37002E279C /* AppController.m in Sources */,
 				967755411C3A65E9002E279C /* CBModel.m in Sources */,
+				9677556D1C3A9EAA002E279C /* CBOrderDetailViewController.m in Sources */,
+				9677555A1C3A8939002E279C /* CBSpec.m in Sources */,
 				967755041C3A625A002E279C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
