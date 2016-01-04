@@ -29,6 +29,7 @@ static NSString * host = @"http://demo3033169.mockable.io";
  *
  */
 @interface CBBAseViewController ()
+
 @end
 
 @implementation CBBAseViewController
@@ -70,7 +71,16 @@ static NSString * host = @"http://demo3033169.mockable.io";
     }];
 }
 
+#pragma accessory
 
+- (BOOL)canBecomeFirstResponder{
+    
+    return self.accesoryView != nil;
+}
+
+- (UIView *)inputAccessoryView{
+    return self.accesoryView;
+}
 
 /*
  *

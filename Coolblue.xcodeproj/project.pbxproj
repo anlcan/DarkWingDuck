@@ -28,11 +28,13 @@
 		967755731C3A9F0C002E279C /* ic_clear_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755701C3A9F0C002E279C /* ic_clear_3x.png */; };
 		967755741C3A9F0C002E279C /* ic_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755711C3A9F0C002E279C /* ic_clear.png */; };
 		967755821C3AA160002E279C /* CBBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755771C3AA160002E279C /* CBBundle.m */; };
-		967755831C3AA160002E279C /* CBCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755791C3AA160002E279C /* CBCustomer.m */; };
 		967755841C3AA160002E279C /* CBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677557B1C3AA160002E279C /* CBModel.m */; };
 		967755851C3AA160002E279C /* CBProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677557D1C3AA160002E279C /* CBProduct.m */; };
 		967755861C3AA160002E279C /* CBProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677557F1C3AA160002E279C /* CBProductDetail.m */; };
 		967755871C3AA160002E279C /* CBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755811C3AA160002E279C /* CBSpec.m */; };
+		9677558A1C3AA1C4002E279C /* CBOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755891C3AA1C4002E279C /* CBOrder.m */; };
+		9677558D1C3AA341002E279C /* CBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677558C1C3AA341002E279C /* CBItem.m */; };
+		967755901C3AAB62002E279C /* CBCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677558F1C3AAB62002E279C /* CBCustomer.m */; };
 		EB69DF8FE11D27B15FEE9646 /* Pods_Coolblue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A73DBF903AA5F7F814CF471 /* Pods_Coolblue.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +92,6 @@
 		967755711C3A9F0C002E279C /* ic_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear.png; sourceTree = "<group>"; };
 		967755761C3AA160002E279C /* CBBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBundle.h; sourceTree = "<group>"; };
 		967755771C3AA160002E279C /* CBBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBundle.m; sourceTree = "<group>"; };
-		967755781C3AA160002E279C /* CBCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomer.h; sourceTree = "<group>"; };
-		967755791C3AA160002E279C /* CBCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomer.m; sourceTree = "<group>"; };
 		9677557A1C3AA160002E279C /* CBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBModel.h; sourceTree = "<group>"; };
 		9677557B1C3AA160002E279C /* CBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBModel.m; sourceTree = "<group>"; };
 		9677557C1C3AA160002E279C /* CBProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBProduct.h; sourceTree = "<group>"; };
@@ -100,6 +100,12 @@
 		9677557F1C3AA160002E279C /* CBProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBProductDetail.m; sourceTree = "<group>"; };
 		967755801C3AA160002E279C /* CBSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSpec.h; sourceTree = "<group>"; };
 		967755811C3AA160002E279C /* CBSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSpec.m; sourceTree = "<group>"; };
+		967755881C3AA1C4002E279C /* CBOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBOrder.h; sourceTree = "<group>"; };
+		967755891C3AA1C4002E279C /* CBOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBOrder.m; sourceTree = "<group>"; };
+		9677558B1C3AA341002E279C /* CBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBItem.h; sourceTree = "<group>"; };
+		9677558C1C3AA341002E279C /* CBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBItem.m; sourceTree = "<group>"; };
+		9677558E1C3AAB62002E279C /* CBCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomer.h; sourceTree = "<group>"; };
+		9677558F1C3AAB62002E279C /* CBCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomer.m; sourceTree = "<group>"; };
 		E3EB63D708C5F120379286BC /* Pods-Coolblue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coolblue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coolblue/Pods-Coolblue.release.xcconfig"; sourceTree = "<group>"; };
 		F38CA0D6065679CFE6BBB04B /* Pods-Coolblue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coolblue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coolblue/Pods-Coolblue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,8 +256,6 @@
 			children = (
 				967755761C3AA160002E279C /* CBBundle.h */,
 				967755771C3AA160002E279C /* CBBundle.m */,
-				967755781C3AA160002E279C /* CBCustomer.h */,
-				967755791C3AA160002E279C /* CBCustomer.m */,
 				9677557A1C3AA160002E279C /* CBModel.h */,
 				9677557B1C3AA160002E279C /* CBModel.m */,
 				9677557C1C3AA160002E279C /* CBProduct.h */,
@@ -260,6 +264,12 @@
 				9677557F1C3AA160002E279C /* CBProductDetail.m */,
 				967755801C3AA160002E279C /* CBSpec.h */,
 				967755811C3AA160002E279C /* CBSpec.m */,
+				967755881C3AA1C4002E279C /* CBOrder.h */,
+				967755891C3AA1C4002E279C /* CBOrder.m */,
+				9677558B1C3AA341002E279C /* CBItem.h */,
+				9677558C1C3AA341002E279C /* CBItem.m */,
+				9677558E1C3AAB62002E279C /* CBCustomer.h */,
+				9677558F1C3AAB62002E279C /* CBCustomer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -463,6 +473,7 @@
 			files = (
 				967755841C3AA160002E279C /* CBModel.m in Sources */,
 				9677554F1C3A6F31002E279C /* CBBAseViewController.m in Sources */,
+				967755901C3AAB62002E279C /* CBCustomer.m in Sources */,
 				967755071C3A625A002E279C /* AppDelegate.m in Sources */,
 				967755531C3A8093002E279C /* CBProductDetailViewController.m in Sources */,
 				9677553C1C3A642B002E279C /* CBMasterViewController.m in Sources */,
@@ -470,10 +481,11 @@
 				967755821C3AA160002E279C /* CBBundle.m in Sources */,
 				9677554C1C3A6E37002E279C /* AppController.m in Sources */,
 				9677556D1C3A9EAA002E279C /* CBOrderDetailViewController.m in Sources */,
+				9677558D1C3AA341002E279C /* CBItem.m in Sources */,
 				967755871C3AA160002E279C /* CBSpec.m in Sources */,
 				967755041C3A625A002E279C /* main.m in Sources */,
-				967755831C3AA160002E279C /* CBCustomer.m in Sources */,
 				967755851C3AA160002E279C /* CBProduct.m in Sources */,
+				9677558A1C3AA1C4002E279C /* CBOrder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

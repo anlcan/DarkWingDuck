@@ -1,5 +1,5 @@
 //
-//  CBCustomer.h
+//  CBOrder.h
 //  Coolblue
 //
 //  Created by Anil Can Baykal on 1/4/16.
@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <JSONModel/JSONModel.h>
 
-@interface CBCustomer : JSONModel
+@interface CBOrder : JSONModel
 
-@property (nonatomic, strong) NSString * email;
+@property (nonatomic, strong) NSMutableArray * products;
 
-@property (nonatomic, strong) NSString * name;
+@property (nonatomic) float totalAmount;
+
 
 @end

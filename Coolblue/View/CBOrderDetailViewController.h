@@ -8,6 +8,7 @@
 
 #import "CBBAseViewController.h"
 
-@interface CBOrderDetailViewController : CBBAseViewController
+@interface CBOrderDetailViewController : CBBAseViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableProducts;
 
 @end

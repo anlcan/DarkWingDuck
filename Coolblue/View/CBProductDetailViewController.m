@@ -46,18 +46,23 @@
     
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
-    [button addTarget:self action:@selector(addToOrder) forControlEvents:UIControlEventTouchUpInside];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setBackgroundColor:[UIColor darkGrayColor]];
-    [button setTitle:NSLocalizedString(@"Add to order",nil) forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:18]];
+    
+
+    if ( [[AppController shared] isProductInOrder:self.productDetail]){
+        [button addTarget:self action:@selector(removeFromOrder) forControlEvents:UIControlEventTouchUpInside];
+        [button setBackgroundColor:[UIColor redColor]];
+        [button setTitle:NSLocalizedString(@"Remove from order",nil) forState:UIControlStateNormal];
+    }else {
+        [button addTarget:self action:@selector(addToOrder) forControlEvents:UIControlEventTouchUpInside];
+        [button setBackgroundColor:[UIColor darkGrayColor]];
+        [button setTitle:NSLocalizedString(@"Add to order",nil) forState:UIControlStateNormal];
+    }
 
     
-    UIView * container2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,HEADER_HEIGHT )];
-    container2.backgroundColor = [UIColor whiteColor];
-    [container2 addSubview:button];
-    [self.tableDetails setTableFooterView:container2];
     
+    self.accesoryView = button;
     
 
     UIBarButtonItem* item =
@@ -75,7 +80,17 @@
 }
 
 -(void)addToOrder{
-   
+    [[AppController shared] addProduct:self.productDetail];
+    
+    UIButton * button = (UIButton*)self.accesoryView;
+    [button addTarget:self action:@selector(removeFromOrder) forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundColor:[UIColor redColor]];
+    [button setTitle:NSLocalizedString(@"Remove from order",nil) forState:UIControlStateNormal];
+}
+
+-(void)removeFromOrder{
+    [[AppController shared] removeProduct:self.productDetail];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //==============================================================================

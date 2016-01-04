@@ -17,6 +17,7 @@
 @property (nonatomic, weak, readonly) AFURLSessionManager* manager;
 
 
+@property (nonatomic, strong) UIView * accesoryView; // if set, it will be shown at the battom of view controller
 /*
  * Util method to parse dictonary to a classToGenerate object usin JSONModel
  */
@@ -34,14 +35,22 @@
 -(void)dismissProgress;
 
 
+
+
 /**
  * convenient method for creating request whith relative paths
  *
  */
 -(NSURLRequest*)requestForPath:(NSString *)relativePath;
 
+/**
+ *
+ */
 -(void)presentOrderViewController;
 
+/**
+ *
+ */
 - (void)shakeAnimation:(UIView*)view;
 
 @end

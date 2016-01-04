@@ -11,6 +11,12 @@
 
 static AppController * shared;
 
+@interface AppController ()
+@property (nonatomic, strong) CBOrder * currentOrder;
+
+@end
+
+
 @implementation AppController
 
 +(AppController*)shared{
@@ -20,6 +26,63 @@ static AppController * shared;
     });
     return shared;
 }
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.currentOrder = [CBOrder new];
+        self.currentOrder.products = [@[] mutableCopy];
+    }
+    return self;
+}
+
+#pragma mark Order
+
+-(void)addProduct:(CBProduct*)product{
+    [self.currentOrder.products addObject:product];
+    [self recalculateOrderAmount];
+}
+
+-(void)removeProduct:(CBProduct*)product{
+    CBProduct * inOrder = [self productInOrder:product];
+    [self.currentOrder.products removeObject:inOrder];
+    [self recalculateOrderAmount];
+}
+
+
+-(CBProduct*)productInOrder:(CBProduct*)product{
+    for(CBProduct * productInBasket in self.currentOrder.products){
+        if ( productInBasket.id == product.id ){
+            return productInBasket;
+        }
+    }
+    return nil;
+}
+
+-(BOOL)isProductInOrder:(CBProduct*)product{
+
+    return [self productInOrder:product] != nil;
+}
+
+-(void)clearOrder{
+    [self.currentOrder.products removeAllObjects];
+    [self recalculateOrderAmount];
+}
+
+
+-(CBOrder*)getCurrentOrder{
+    return _currentOrder;
+}
+
+-(void)recalculateOrderAmount{
+    
+    self.currentOrder.totalAmount = 0;
+    for (CBProduct * p in self.currentOrder.products){
+        self.currentOrder.totalAmount += p.price;
+    }
+}
+
 
 -(NSArray*)filteredProducts:(NSString *)text{
 
