@@ -15,16 +15,10 @@
 		9677552B1C3A625A002E279C /* CoolblueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677552A1C3A625A002E279C /* CoolblueUITests.m */; };
 		9677553C1C3A642B002E279C /* CBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677553A1C3A642B002E279C /* CBMasterViewController.m */; };
 		9677553D1C3A642B002E279C /* CBMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9677553B1C3A642B002E279C /* CBMasterViewController.xib */; };
-		967755411C3A65E9002E279C /* CBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755401C3A65E9002E279C /* CBModel.m */; };
-		967755441C3A65FB002E279C /* CBProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755431C3A65FB002E279C /* CBProduct.m */; };
-		967755471C3A660E002E279C /* CBCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755461C3A660E002E279C /* CBCustomer.m */; };
 		9677554C1C3A6E37002E279C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677554B1C3A6E37002E279C /* AppController.m */; };
 		9677554F1C3A6F31002E279C /* CBBAseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677554E1C3A6F31002E279C /* CBBAseViewController.m */; };
 		967755531C3A8093002E279C /* CBProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755511C3A8093002E279C /* CBProductDetailViewController.m */; };
 		967755541C3A8093002E279C /* CBProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967755521C3A8093002E279C /* CBProductDetailViewController.xib */; };
-		9677555A1C3A8939002E279C /* CBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755591C3A8939002E279C /* CBSpec.m */; };
-		9677555D1C3A8981002E279C /* CBBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677555C1C3A8981002E279C /* CBBundle.m */; };
-		967755601C3A8A93002E279C /* CBProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677555F1C3A8A93002E279C /* CBProductDetail.m */; };
 		967755651C3A9D0F002E279C /* ic_shopping_basket_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755621C3A9D0F002E279C /* ic_shopping_basket_2x.png */; };
 		967755661C3A9D0F002E279C /* ic_shopping_basket_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755631C3A9D0F002E279C /* ic_shopping_basket_3x.png */; };
 		967755691C3A9D31002E279C /* ic_shopping_basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755681C3A9D31002E279C /* ic_shopping_basket.png */; };
@@ -33,6 +27,12 @@
 		967755721C3A9F0C002E279C /* ic_clear_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9677556F1C3A9F0C002E279C /* ic_clear_2x.png */; };
 		967755731C3A9F0C002E279C /* ic_clear_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755701C3A9F0C002E279C /* ic_clear_3x.png */; };
 		967755741C3A9F0C002E279C /* ic_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 967755711C3A9F0C002E279C /* ic_clear.png */; };
+		967755821C3AA160002E279C /* CBBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755771C3AA160002E279C /* CBBundle.m */; };
+		967755831C3AA160002E279C /* CBCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755791C3AA160002E279C /* CBCustomer.m */; };
+		967755841C3AA160002E279C /* CBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677557B1C3AA160002E279C /* CBModel.m */; };
+		967755851C3AA160002E279C /* CBProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677557D1C3AA160002E279C /* CBProduct.m */; };
+		967755861C3AA160002E279C /* CBProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677557F1C3AA160002E279C /* CBProductDetail.m */; };
+		967755871C3AA160002E279C /* CBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 967755811C3AA160002E279C /* CBSpec.m */; };
 		EB69DF8FE11D27B15FEE9646 /* Pods_Coolblue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A73DBF903AA5F7F814CF471 /* Pods_Coolblue.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,12 +72,6 @@
 		967755391C3A642B002E279C /* CBMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMasterViewController.h; sourceTree = "<group>"; };
 		9677553A1C3A642B002E279C /* CBMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMasterViewController.m; sourceTree = "<group>"; };
 		9677553B1C3A642B002E279C /* CBMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBMasterViewController.xib; sourceTree = "<group>"; };
-		9677553F1C3A65E9002E279C /* CBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBModel.h; path = "\U0010Model/CBModel.h"; sourceTree = "<group>"; };
-		967755401C3A65E9002E279C /* CBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBModel.m; path = "\U0010Model/CBModel.m"; sourceTree = "<group>"; };
-		967755421C3A65FB002E279C /* CBProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBProduct.h; path = "\U0010Model/CBProduct.h"; sourceTree = "<group>"; };
-		967755431C3A65FB002E279C /* CBProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBProduct.m; path = "\U0010Model/CBProduct.m"; sourceTree = "<group>"; };
-		967755451C3A660E002E279C /* CBCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBCustomer.h; path = "\U0010Model/CBCustomer.h"; sourceTree = "<group>"; };
-		967755461C3A660E002E279C /* CBCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBCustomer.m; path = "\U0010Model/CBCustomer.m"; sourceTree = "<group>"; };
 		9677554A1C3A6E37002E279C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Controller/AppController.h; sourceTree = "<group>"; };
 		9677554B1C3A6E37002E279C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Controller/AppController.m; sourceTree = "<group>"; };
 		9677554D1C3A6F31002E279C /* CBBAseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBBAseViewController.h; path = View/CBBAseViewController.h; sourceTree = "<group>"; };
@@ -85,12 +79,6 @@
 		967755501C3A8093002E279C /* CBProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBProductDetailViewController.h; path = View/CBProductDetailViewController.h; sourceTree = "<group>"; };
 		967755511C3A8093002E279C /* CBProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBProductDetailViewController.m; path = View/CBProductDetailViewController.m; sourceTree = "<group>"; };
 		967755521C3A8093002E279C /* CBProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBProductDetailViewController.xib; path = View/CBProductDetailViewController.xib; sourceTree = "<group>"; };
-		967755581C3A8939002E279C /* CBSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBSpec.h; path = "\U0010Model/CBSpec.h"; sourceTree = "<group>"; };
-		967755591C3A8939002E279C /* CBSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBSpec.m; path = "\U0010Model/CBSpec.m"; sourceTree = "<group>"; };
-		9677555B1C3A8981002E279C /* CBBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBBundle.h; path = "\U0010Model/CBBundle.h"; sourceTree = "<group>"; };
-		9677555C1C3A8981002E279C /* CBBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBBundle.m; path = "\U0010Model/CBBundle.m"; sourceTree = "<group>"; };
-		9677555E1C3A8A93002E279C /* CBProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBProductDetail.h; path = "\U0010Model/CBProductDetail.h"; sourceTree = "<group>"; };
-		9677555F1C3A8A93002E279C /* CBProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBProductDetail.m; path = "\U0010Model/CBProductDetail.m"; sourceTree = "<group>"; };
 		967755621C3A9D0F002E279C /* ic_shopping_basket_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_basket_2x.png; sourceTree = "<group>"; };
 		967755631C3A9D0F002E279C /* ic_shopping_basket_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_basket_3x.png; sourceTree = "<group>"; };
 		967755681C3A9D31002E279C /* ic_shopping_basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_shopping_basket.png; sourceTree = "<group>"; };
@@ -100,6 +88,18 @@
 		9677556F1C3A9F0C002E279C /* ic_clear_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_2x.png; sourceTree = "<group>"; };
 		967755701C3A9F0C002E279C /* ic_clear_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_3x.png; sourceTree = "<group>"; };
 		967755711C3A9F0C002E279C /* ic_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear.png; sourceTree = "<group>"; };
+		967755761C3AA160002E279C /* CBBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBundle.h; sourceTree = "<group>"; };
+		967755771C3AA160002E279C /* CBBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBundle.m; sourceTree = "<group>"; };
+		967755781C3AA160002E279C /* CBCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomer.h; sourceTree = "<group>"; };
+		967755791C3AA160002E279C /* CBCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomer.m; sourceTree = "<group>"; };
+		9677557A1C3AA160002E279C /* CBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBModel.h; sourceTree = "<group>"; };
+		9677557B1C3AA160002E279C /* CBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBModel.m; sourceTree = "<group>"; };
+		9677557C1C3AA160002E279C /* CBProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBProduct.h; sourceTree = "<group>"; };
+		9677557D1C3AA160002E279C /* CBProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBProduct.m; sourceTree = "<group>"; };
+		9677557E1C3AA160002E279C /* CBProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBProductDetail.h; sourceTree = "<group>"; };
+		9677557F1C3AA160002E279C /* CBProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBProductDetail.m; sourceTree = "<group>"; };
+		967755801C3AA160002E279C /* CBSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSpec.h; sourceTree = "<group>"; };
+		967755811C3AA160002E279C /* CBSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSpec.m; sourceTree = "<group>"; };
 		E3EB63D708C5F120379286BC /* Pods-Coolblue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coolblue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coolblue/Pods-Coolblue.release.xcconfig"; sourceTree = "<group>"; };
 		F38CA0D6065679CFE6BBB04B /* Pods-Coolblue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coolblue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coolblue/Pods-Coolblue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,9 +164,9 @@
 		967755011C3A625A002E279C /* Coolblue */ = {
 			isa = PBXGroup;
 			children = (
+				967755751C3AA160002E279C /* Model */,
 				967755491C3A6E15002E279C /* Controller */,
 				967755481C3A6E02002E279C /* View */,
-				9677553E1C3A65B7002E279C /* Model */,
 				967755051C3A625A002E279C /* AppDelegate.h */,
 				967755061C3A625A002E279C /* AppDelegate.m */,
 				967755111C3A625A002E279C /* Assets.xcassets */,
@@ -203,25 +203,6 @@
 				9677552C1C3A625A002E279C /* Info.plist */,
 			);
 			path = CoolblueUITests;
-			sourceTree = "<group>";
-		};
-		9677553E1C3A65B7002E279C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9677555E1C3A8A93002E279C /* CBProductDetail.h */,
-				9677555F1C3A8A93002E279C /* CBProductDetail.m */,
-				9677553F1C3A65E9002E279C /* CBModel.h */,
-				967755401C3A65E9002E279C /* CBModel.m */,
-				967755421C3A65FB002E279C /* CBProduct.h */,
-				967755431C3A65FB002E279C /* CBProduct.m */,
-				967755451C3A660E002E279C /* CBCustomer.h */,
-				967755461C3A660E002E279C /* CBCustomer.m */,
-				967755581C3A8939002E279C /* CBSpec.h */,
-				967755591C3A8939002E279C /* CBSpec.m */,
-				9677555B1C3A8981002E279C /* CBBundle.h */,
-				9677555C1C3A8981002E279C /* CBBundle.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		967755481C3A6E02002E279C /* View */ = {
@@ -262,6 +243,25 @@
 				967755631C3A9D0F002E279C /* ic_shopping_basket_3x.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		967755751C3AA160002E279C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				967755761C3AA160002E279C /* CBBundle.h */,
+				967755771C3AA160002E279C /* CBBundle.m */,
+				967755781C3AA160002E279C /* CBCustomer.h */,
+				967755791C3AA160002E279C /* CBCustomer.m */,
+				9677557A1C3AA160002E279C /* CBModel.h */,
+				9677557B1C3AA160002E279C /* CBModel.m */,
+				9677557C1C3AA160002E279C /* CBProduct.h */,
+				9677557D1C3AA160002E279C /* CBProduct.m */,
+				9677557E1C3AA160002E279C /* CBProductDetail.h */,
+				9677557F1C3AA160002E279C /* CBProductDetail.m */,
+				967755801C3AA160002E279C /* CBSpec.h */,
+				967755811C3AA160002E279C /* CBSpec.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ED01042961013C59FD75DCF9 /* Frameworks */ = {
@@ -461,19 +461,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9677555D1C3A8981002E279C /* CBBundle.m in Sources */,
+				967755841C3AA160002E279C /* CBModel.m in Sources */,
 				9677554F1C3A6F31002E279C /* CBBAseViewController.m in Sources */,
-				967755441C3A65FB002E279C /* CBProduct.m in Sources */,
 				967755071C3A625A002E279C /* AppDelegate.m in Sources */,
 				967755531C3A8093002E279C /* CBProductDetailViewController.m in Sources */,
-				967755471C3A660E002E279C /* CBCustomer.m in Sources */,
-				967755601C3A8A93002E279C /* CBProductDetail.m in Sources */,
 				9677553C1C3A642B002E279C /* CBMasterViewController.m in Sources */,
+				967755861C3AA160002E279C /* CBProductDetail.m in Sources */,
+				967755821C3AA160002E279C /* CBBundle.m in Sources */,
 				9677554C1C3A6E37002E279C /* AppController.m in Sources */,
-				967755411C3A65E9002E279C /* CBModel.m in Sources */,
 				9677556D1C3A9EAA002E279C /* CBOrderDetailViewController.m in Sources */,
-				9677555A1C3A8939002E279C /* CBSpec.m in Sources */,
+				967755871C3AA160002E279C /* CBSpec.m in Sources */,
 				967755041C3A625A002E279C /* main.m in Sources */,
+				967755831C3AA160002E279C /* CBCustomer.m in Sources */,
+				967755851C3AA160002E279C /* CBProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
